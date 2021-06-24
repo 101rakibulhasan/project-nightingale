@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet"></link>
+		<link rel="shortcut icon" type="image/png" href="img/disc.png"/>
+	</head>
+	
+	<body id="dropContainer">
+		
+		<button class="album_art" id="play" onclick="playState();">
+			<img class="playerstate" src="img/play.png"/>
+			<input class="fileinput" type="file" id="fileInput" />
+		</button>
+		<img class="gimic" src="img/gimic.png"/>
+		<p class="title" id="title">Title<p>
+		<!--<p class="artist_name">Artist<p>-->
+		<div class="control">
+			
+			<input oninput="pauseSong();" onchange="changeTime();" class="slider" id="progress" type="range" min="0" max="100" value="0" steps="1">
+			
+			</input>
+			
+			<p class="start_point" id="cur_point">00 : 00<p>
+			<p class="end_point" id="end_point">00 : 00<p>
+		</div>
+		<p class="nightingle_title"> N    I    G    H    T    I    N    G    A    L    E <p>
+		<audio id="music_id" src="alone.mp3" id="audio"></audio>
+		
+		<script src="control.js"></script>
+	</body>
+</html>

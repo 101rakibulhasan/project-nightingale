@@ -1,0 +1,142 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+body{
+	background-image: url("img/bg.jpg");
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow:hidden;
+	font-family: 'Tajawal', sans-serif;
+}
+
+.gimic{
+	width:35%;
+	position: absolute;
+    top: 30%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index:-1;
+}
+
+.album_art{
+	width:120px;
+	height:120px;
+	position: absolute;
+    top: 30%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border-radius:50%;
+	filter: drop-shadow( 0px 10px 10px black);
+	outline:none;
+	border:none;
+	background-image: url("img/default.png");
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.album_art:hover{
+	transition: 0.3s ease-in-out;
+	filter: drop-shadow( 0px 0px 5px white);
+}
+
+.title{
+	color:#968701;
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+    top: 70%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: inline;
+	white-space: nowrap;
+}
+
+.artist_name{
+	color:#ffffff;
+	font-size: 14px;
+	position: absolute;
+    top: 72%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start_point{
+	color:#968701;
+	font-size: 13px;
+	position: absolute;
+    top: 70%;  
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.end_point{
+	color:#968701;
+	font-size: 13px;
+	position: absolute;
+    top: 70%;  
+    right: 50px;
+    transform: translate(50%, -50%);
+}
+
+.control{
+	position: absolute;
+    top: 85%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width:85%;
+}
+
+.slider{
+	-webkit-appearance:none;
+	background:white;
+	width:100%;
+	height:2px;
+	border-radius:50%;
+}
+
+.slider::-webkit-slider-thumb
+{
+	-webkit-appearance:none;
+	background:#cbb701;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	box-shadow: 0 0 0 0 #cbb701;
+	transition: 0.3s ease-in-out
+}
+
+.nightingle_title{
+	color:#ffffff;
+	font-size: 15px;
+	position: absolute;
+    top: 90%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+	opacity: 30%;
+	filter: drop-shadow( 0px 0px 5px grey);
+}
+
+.playerstate{
+	opacity:0%;
+	transition: 0.3s ease-in-out;
+	position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width:100%
+}
+
+.playerstate:hover{
+	opacity:70%;
+}
+
+.playerstate img{
+	width:120px;
+	height:120px;
+}
+
+.fileinput{
+	visibility: hidden;
+}
