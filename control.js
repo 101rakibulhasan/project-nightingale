@@ -16,7 +16,7 @@ var playing = false;
 function loadSong(song)
 {
 	music.src = "Norah Jones.mp3"
-	title.innerText = music.src.split(/(\\|\/)/g).pop().replace('.mp3','').replace(/%20/g, " ")
+	/*title.innerText = music.src.split(/(\\|\/)/g).pop().replace('.mp3','').replace(/%20/g, " ")*/
 }
 
 function smartTime(time)
