@@ -15,7 +15,7 @@ var playing = false;
 
 function loadSong(song)
 {
-	music.src = "Nightingale - Norah Jones Cover Song from Come Away With Me Album.mp3"
+	music.src = "Norah Jones.mp3"
 	title.innerText = music.src.split(/(\\|\/)/g).pop().replace('.mp3','').replace(/%20/g, " ")
 }
 
